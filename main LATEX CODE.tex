@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{graphicx}      % To include images
+\usepackage{subfigure}     % For subfigure environment (deprecated)
+
+\begin{document}
+
+\title{Side-by-Side Figures Using Subfigure (Deprecated)}
+\author{Koyena Brahma}
+\date{\today}
+\maketitle
+
+\section{Introduction}
+This document demonstrates how to include side-by-side figures using the \texttt{subfigure} package in LaTeX.
+
+\section{Side-by-Side Figures}
+
+Here, we present two figures placed side by side using the \texttt{subfigure} package.
+
+\begin{figure}[h]
+    \centering
+    % First subfigure
+    \subfigure[First Image]{
+        \includegraphics[width=0.45\textwidth]{image1.jpg}
+        \label{fig:sub1}
+    }
+    \hfill
+    % Second subfigure
+    \subfigure[Second Image]{
+        \includegraphics[width=0.45\textwidth]{image2.jpg}
+        \label{fig:sub2}
+    }
+    \caption{Two images side by side using subfigure}
+    \label{fig:side_by_side_subfigure}
+\end{figure}
+
+\section{Conclusion}
+In this example, we successfully placed two images side by side using the deprecated \texttt{subfigure} package.
+\end{document}
+
